@@ -1,0 +1,257 @@
+
+/* GENERAL SETTINGS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    color: #263247;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background: linear-gradient(90deg, #283593, #6a1b9a);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+    .navbar h2 {
+        margin: 0;
+        font-size: 23px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-left: 22px;
+        font-weight: 600;
+    }
+
+        .navbar a:hover {
+            color: #ffdd80;
+        }
+
+/* MAIN CONTAINER */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* HOME PAGE */
+.hero {
+    background: linear-gradient(135deg, #283593, #7b1fa2);
+    color: white;
+    padding: 65px 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(40,53,147,0.2);
+}
+
+    .hero h1 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #3949ab;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+    .btn:hover {
+        background: #1a237e;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+.btn-light {
+    background: white;
+    color: #3949ab;
+}
+
+    .btn-light:hover {
+        background: #e8eaf6;
+        color: #283593;
+    }
+
+/* PAGE HEADINGS */
+.page-title {
+    color: #283593;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* FORM CARD */
+.form-card {
+    background: white;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #344267;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd2e0;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+    .form-control:focus {
+        border-color: #5c6bc0;
+        box-shadow: 0 0 5px rgba(92,107,192,0.3);
+    }
+
+/* VALIDATION */
+.field-validation-error {
+    color: #dc3545;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.validation-summary-errors {
+    color: #dc3545;
+    background: #fff0f0;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+.input-validation-error {
+    border-color: #dc3545;
+}
+
+/* STUDENT TABLE */
+.table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.07);
+    overflow-x: auto;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+    .student-table th {
+        background: #3949ab;
+        color: white;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .student-table td {
+        padding: 14px;
+        border-bottom: 1px solid #e5e8f0;
+    }
+
+    .student-table tr:hover td {
+        background: #f1f3ff;
+    }
+
+/* DETAILS CARD */
+.details-card {
+    background: white;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.08);
+}
+
+.detail-item {
+    padding: 15px;
+    border-bottom: 1px solid #e5e8f0;
+    font-size: 16px;
+}
+
+    .detail-item strong {
+        display: inline-block;
+        width: 130px;
+        color: #3949ab;
+    }
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+    }
+
+    .navbar {
+        padding: 15px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+        .navbar a {
+            margin: 5px;
+        }
+
+    .hero {
+        padding: 40px 18px;
+    }
+
+        .hero h1 {
+            font-size: 27px;
+        }
+
+    .form-card,
+    .details-card {
+        padding: 20px;
+    }
+}
